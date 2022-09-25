@@ -3,6 +3,28 @@
 // является ли оно палиндромом.
 // 14212 -> нет     12821 -> да     23432 -> да
 
+Console.WriteLine("Введите число");  // 12321
+string n = Console.ReadLine()!;
+System.Boolean result = true;
+    for (int i = 0; i < (n.Length - 1) / 2; i++)
+    if (n[i] != n[n.Length - i - 1])
+    {
+        result = false;
+    }    
+    if (result)
+    {
+        Console.WriteLine("Палиндром");
+        return;
+    }
+    else 
+    {
+        Console.WriteLine("Не палиндром");
+        return;
+    }
+
+ 
+    
+
 
 
 
@@ -35,14 +57,14 @@
 // Напишите программу, которая принимает на вход число (N) и 
 // выдаёт таблицу кубов чисел от 1 до N.
 // 3 -> 1, 8, 27       5 -> 1, 8, 27, 64, 125
-Console.Write("Введите N: ");
-int number = int.Parse(Console.ReadLine()!);
+// Console.Write("Введите N: ");
+// int number = int.Parse(Console.ReadLine()!);
 
-for (int index = 1; index <= number; index++)
-{
-  double result = Math.Pow(index,3);
-  Console.Write($"{result} "); 
-}
+// for (int index = 1; index <= number; index++)
+// {
+//   double result = Math.Pow(index,3);
+//   Console.Write($"{result} "); 
+// }
 
 
 
