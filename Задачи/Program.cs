@@ -3,30 +3,27 @@
 // является ли оно палиндромом.
 // 14212 -> нет     12821 -> да     23432 -> да
 
-Console.WriteLine("Введите число");  // 12321
-string n = Console.ReadLine()!;
-System.Boolean result = true;
-    for (int i = 0; i < (n.Length - 1) / 2; i++)
-    if (n[i] != n[n.Length - i - 1])
-    {
-        result = false;
-    }    
-    if (result)
-    {
-        Console.WriteLine("Палиндром");
-        return;
-    }
-    else 
-    {
-        Console.WriteLine("Не палиндром");
-        return;
-    }
+// Console.WriteLine("Введите число");  // 12321
+// string n = Console.ReadLine()!;
+// System.Boolean result = true;
+//     for (int i = 0; i < (n.Length - 1) / 2; i++)
+//     if (n[i] != n[n.Length - i - 1])
+//     {
+//         result = false;
+//     }    
+//     if (result)
+//     {
+//         Console.WriteLine("Палиндром");
+//         return;
+//     }
+//     else 
+//     {
+//         Console.WriteLine("Не палиндром");
+//         return;
+//     }
 
  
     
-
-
-
 
 
 
