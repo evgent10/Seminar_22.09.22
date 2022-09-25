@@ -13,20 +13,20 @@
 // находит расстояние между ними в 3D пространстве. 
 // AB = √(xb - xa)**2 + (yb - ya)**2 + (zb - za)**2
 // A (3,6,8); B (2,1,-7), -> 15.84       A (7,-5, 0); B (1,-1,9) -> 11.53
-Console.WriteLine("Введите координаты х1");
-int x1 = int.Parse(Console.ReadLine()!);
-Console.WriteLine("Введите координаты y1");
-int y1 = int.Parse(Console.ReadLine()!);
-Console.WriteLine("Введите координаты z1");
-int z1 = int.Parse(Console.ReadLine()!);
-Console.WriteLine("Введите координаты х2");
-int x2 = int.Parse(Console.ReadLine()!);
-Console.WriteLine("Введите координаты y2");
-int y2 = int.Parse(Console.ReadLine()!);
-Console.WriteLine("Введите координаты z2");
-int z2 = int.Parse(Console.ReadLine()!);
-double dist = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2) + Math.Pow(z2 - z1, 2));
-Console.WriteLine($"Расстояние между двумя точками равно {dist:f2}");
+// Console.WriteLine("Введите координаты х1");
+// int x1 = int.Parse(Console.ReadLine()!);
+// Console.WriteLine("Введите координаты y1");
+// int y1 = int.Parse(Console.ReadLine()!);
+// Console.WriteLine("Введите координаты z1");
+// int z1 = int.Parse(Console.ReadLine()!);
+// Console.WriteLine("Введите координаты х2");
+// int x2 = int.Parse(Console.ReadLine()!);
+// Console.WriteLine("Введите координаты y2");
+// int y2 = int.Parse(Console.ReadLine()!);
+// Console.WriteLine("Введите координаты z2");
+// int z2 = int.Parse(Console.ReadLine()!);
+// double dist = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2) + Math.Pow(z2 - z1, 2));
+// Console.WriteLine($"Расстояние между двумя точками равно {dist:f2}");
 
 
 
@@ -35,15 +35,14 @@ Console.WriteLine($"Расстояние между двумя точками р
 // Напишите программу, которая принимает на вход число (N) и 
 // выдаёт таблицу кубов чисел от 1 до N.
 // 3 -> 1, 8, 27       5 -> 1, 8, 27, 64, 125
+Console.Write("Введите N: ");
+int number = int.Parse(Console.ReadLine()!);
 
-
-
-
-
-
-
-
-
+for (int index = 1; index <= number; index++)
+{
+  double result = Math.Pow(index,3);
+  Console.Write($"{result} "); 
+}
 
 
 
